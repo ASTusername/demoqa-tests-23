@@ -3,11 +3,9 @@ package tests;
 import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
-import org.openqa.selenium.By;
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
-import static com.codeborne.selenide.Selectors.byValue;
 import static com.codeborne.selenide.Selenide.*;
 
 public class PracticeForm {
@@ -44,5 +42,17 @@ public class PracticeForm {
         executeJavaScript("$('#fixedban').remove()");
         executeJavaScript("$('footer').remove()");
         $("#submit").click();
+
+        $(".table-responsive").shouldHave(
+                text("Alex Surname Alex"),
+                text("222@name.ru"),
+                text("Male"),
+                text("1234567890"),
+                text("17 December,1977"),
+                text("History, English"),
+                text("Sports, Reading"),
+                text("file.png"),
+                text("My present address"),
+                text("NCR Delhi"));
     }
 }
