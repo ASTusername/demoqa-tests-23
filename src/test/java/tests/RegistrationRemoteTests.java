@@ -56,8 +56,8 @@ public class RegistrationRemoteTests {
         });
         step("Fill form", () -> {
             $("#firstName").setValue("Alex");
-            $("#lastName").setValue("Egorov");
-            $("#userEmail").setValue("alex@egorov.com");
+            $("#lastName").setValue("Trifonov");
+            $("#userEmail").setValue("222@mail.com");
             $("#genterWrapper").$(byText("Other")).click();
             $("#userNumber").setValue("1234567890");
             $("#dateOfBirthInput").click();
@@ -77,8 +77,8 @@ public class RegistrationRemoteTests {
         step("Verify results", () -> {
             $(".modal-dialog").should(appear);
             $("#example-modal-sizes-title-lg").shouldHave(text("Thanks for submitting the form"));
-            $(".table-responsive").shouldHave(text("Alex"), text("Egorov"),
-                    text("alex@egorov.com"), text("1234567890"));
+            $(".table-responsive").shouldHave(text("Alex"), text("Trifonov"),
+                    text("222@mail.com"), text("1234567890"));
         });
     }
 }
