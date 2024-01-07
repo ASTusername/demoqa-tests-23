@@ -23,7 +23,8 @@ public class RegistrationRemoteTests {
     @BeforeAll
     static void beforeAll() {
         Configuration.browserSize = "1520x1080";
-        Configuration.baseUrl = "https://demoqa.com";
+        Configuration.baseUrl = System.getProperty("baseUrl", "https://demoqa.com");
+//        Configuration.baseUrl = "https://demoqa.com";
         Configuration.pageLoadStrategy = "eager";
 //        Configuration.holdBrowserOpen = true;
         Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
