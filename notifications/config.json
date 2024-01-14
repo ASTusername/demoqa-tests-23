@@ -4,9 +4,9 @@
     "environment": "qa.guru",
     "comment": "Jenkins tests",
     "reportLink": "${BUILD_URL}",
-    "language": "ru",
+    "language": "en",
     "messenger": "telegram",
-    "allureFolder": "allureReport",
+    "allureFolder": "allure-report",
     "enableChart": true
   },
   "telegram": {
