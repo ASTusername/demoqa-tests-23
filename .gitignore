@@ -13,4 +13,5 @@ build/
 ### Logs ###
 *.log
 
-.notifications
+.notifications/config.json
+.notifications/draft.txt
