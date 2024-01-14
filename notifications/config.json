@@ -1,12 +1,12 @@
 {
   "base": {
-    "project": "Some name",
+    "project": "${JOB_NAME}",
     "environment": "qa.guru",
     "comment": "Jenkins tests",
     "reportLink": "${BUILD_URL}",
     "language": "ru",
     "messenger": "telegram",
-    "allureFolder": "C:/Users/Home/dev/qa_guru/demoqa-tests-23/build/reports/allure-report/allureReport",
+    "allureFolder": "allureReport",
     "enableChart": true
   },
   "telegram": {
