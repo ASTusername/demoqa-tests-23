@@ -1,0 +1,17 @@
+{
+  "base": {
+    "project": "Some name",
+    "environment": "qa.guru",
+    "comment": "Jenkins tests",
+    "reportLink": "${BUILD_URL}",
+    "language": "ru",
+    "messenger": "telegram",
+    "allureFolder": "C:/Users/Home/dev/qa_guru/demoqa-tests-23/build/reports/allure-report/allureReport",
+    "enableChart": true
+  },
+  "telegram": {
+    "token": "6964674836:AAGoPFvsEOvtgHUI1DFsdTmXTvoVuOdlFB8",
+    "chat": "-1002067918595",
+    "replyTo": ""
+  }
+}
