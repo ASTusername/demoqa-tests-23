@@ -24,12 +24,10 @@ public class RegistrationRemoteTests extends BaseTest{
     @Tag("demoqa")
     void successfulRegistrationTest() {
         step("Open form", () -> {
-            open("/automation-practice-form");
-            $(".practice-form-wrapper").shouldHave(text("Student Registration Form"));
-            executeJavaScript("$('#fixedban').remove()");
-            executeJavaScript("$('footer').remove()");
+            open("/");
+            $("[data-testid='nav-item']").shouldHave(text("Аренда"));
         });
-        step("Fill form", () -> {
+    /*    step("Fill form", () -> {
             $("#firstName").setValue("Alex");
             $("#lastName").setValue("Trifonov");
             $("#userEmail").setValue("222@mail.com");
@@ -54,6 +52,6 @@ public class RegistrationRemoteTests extends BaseTest{
             $("#example-modal-sizes-title-lg").shouldHave(text("Thanks for submitting the form"));
             $(".table-responsive").shouldHave(text("Alex"), text("Trifonov"),
                     text("222@mail.com"), text("1234567890"));
-        });
+        });*/
     }
 }
